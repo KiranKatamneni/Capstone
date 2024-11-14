@@ -12,7 +12,7 @@
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
-                <img src="{{ url_for('static', filename='logo.png') }}" alt="GenAI Logo" class="logo-image">
+                <img src="{{ url_for('static', filename='AiSG.png') }}" alt="GenAI Logo" class="logo-image">
                 GenAI Story Teller
             </div>
             <ul class="nav-links">
@@ -33,6 +33,13 @@
 
         <!-- Hero Section -->
     <section class="hero">
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video" loading="lazy">
+                <source src="{{ url_for('static', filename='videos/video_music.mp4') }}" type="video/mp4"> <!-- Replace with your video path -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
         <div class="hero-content">
             <h1>AI-Powered Story Generation</h1>
             <p>Transforming your imagination into incredible stories with just a few clicks.</p>
@@ -119,7 +126,7 @@
                 </div>
     
                 <div class="team-member">
-                    <img src="{{ url_for('static', filename='sameer.jpg') }}" alt="Sameer Tele" class="team-photo">
+                    <img src="{{ url_for('static', filename='sameer.jpeg') }}" alt="Sameer Tele" class="team-photo">
                     <h3 class="team-name">Sameer Tele</h3>
                     <p class="team-role">NLP & Data Scientist</p>
                     <p class="team-bio">
@@ -131,7 +138,7 @@
                 <div class="team-member">
                     <img src="{{ url_for('static', filename='minal.jpeg') }}" alt="Minal Chitale" class="team-photo">
                     <h3 class="team-name">Minal Chitale</h3>
-                    <p class="team-role">Project Lead & NLP Expert</p>
+                    <p class="team-role">Project Lead & ML Expert</p>
                     <p class="team-bio">
                         Minal developed the idea for the project and conducted in-depth research to define the tech stack. 
                         She applied advanced NLP techniques and metrics like perplexity and the Flesch-Kincaid index to ensure engaging, coherent stories.
@@ -158,10 +165,10 @@
             <p>&copy; 2024 Ai Story Generator</p>
             <div class="social-icons">
                 <a href="#"><img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook"></a>
-            <a href="#"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn"></a>
-            <a href="#"><img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram"></a>
-            <a href="#"><img src="{{ url_for('static', filename='x.png') }}" alt="X"></a>
-            <a href="#"><img src="{{ url_for('static', filename='youtube.png') }}" alt="YouTube"></a>
+                <a href="#"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn"></a>
+                <a href="#"><img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url_for('static', filename='x.png') }}" alt="X"></a>
+                <a href="#"><img src="{{ url_for('static', filename='youtube.png') }}" alt="YouTube"></a>
             </div>
         </section>
     </footer>

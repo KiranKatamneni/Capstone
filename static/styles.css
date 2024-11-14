@@ -88,27 +88,28 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('bg.jpeg');
     background-size: cover;
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .hero h1 {
     font-size: 3em;
     font-weight: bold;
     padding: 10px;
+    z-index: 1;
 }
 
 .hero p {
     font-size: 1.2em;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 30px;
+    z-index: 1;
 }
 
 /* Hero message styling */
 .hero-section {
-    background: #0d0c1d; /* Deep background color for contrast */
     color: #fff; /* White text color */
     text-align: center;
     padding: 100px 20px;
@@ -195,6 +196,21 @@ section {
 
 .hero-subtext {
     font-size: 1.5rem;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind the content */
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video fills the area without distortion */
 }
 
 .create-stories-section {
