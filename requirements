@@ -4,3 +4,4 @@ transformers
 torch
 re
 requests
+os
