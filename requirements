@@ -1,0 +1,6 @@
+flask
+flask-ngrok
+transformers
+torch
+re
+requests
